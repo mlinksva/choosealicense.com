@@ -1,7 +1,8 @@
+{% include base.html %}
       <footer class="site-footer clearfix">
         <nav>
-          <a href="/about/">About</a>
-          <a href="/terms-of-service/">Terms of Service</a>
+          <a href="{{ base }}/about/">About</a>
+          <a href="{{ base }}/terms-of-service/">Terms of Service</a>
         </nav>
         <p>
           The content of this site is licensed under the <a href="https://creativecommons.org/licenses/by/3.0/">
@@ -15,13 +16,13 @@
     </div> <!-- /container -->
 
     {% if page.collection == "licenses" or page.class == "license-types" %}
-    <script src="/assets/vendor/jquery/jquery.min.js"></script>
-    <script src="/assets/vendor/qtip2/jquery.qtip.min.js"></script>
-    <script src="/assets/vendor/clipboard/dist/clipboard.min.js"></script>
+    <script src="{{ base }}/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="{{ base }}/assets/vendor/qtip2/jquery.qtip.min.js"></script>
+    <script src="{{ base }}/assets/vendor/clipboard/dist/clipboard.min.js"></script>
     <script>
       window.annotations = {{ site.data.rules | jsonify }};
     </script>
-    <script src="/assets/js/app.js"></script>
+    <script src="{{ base }}/assets/js/app.js"></script>
     {% endif %}
 
     <script>

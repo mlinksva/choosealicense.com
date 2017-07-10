@@ -1,8 +1,9 @@
+{% include base.html %}
 {% unless page.hide_breadcrumbs == true %}
   <ol>
     <li>
       {% if page.layout == "license" %}
-        <a href="/">Home</a> / <a href="/licenses/">Licenses</a>
+        <a href="{{ base }}/">Home</a> / <a href="{{ base }}/licenses/">Licenses</a>
       {% else %}
         <a href="/">Home</a>
       {% endif %}

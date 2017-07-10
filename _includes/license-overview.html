@@ -1,3 +1,4 @@
+{% include base.html %}
 {% assign id = "/licenses/" | append: include.license-id %}
 {% assign licenses = site.licenses | where:"id", id %}
 {% for license in licenses %}
